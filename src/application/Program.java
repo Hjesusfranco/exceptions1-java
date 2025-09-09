@@ -20,6 +20,7 @@ public class Program {
         System.out.print("Check-out date (dd/MM/yyyy): ");
         Date checkOut = sdf.parse(sc.next());
 
+
         if (!checkOut.after(checkIn)){
             System.out.print("Error in reservation: Check-out date must be after check-in date!");
         }
